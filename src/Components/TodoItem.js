@@ -5,7 +5,7 @@ export default class TodoItem extends Component {
         return (
             <div className = "todo-item">
                 <input type="checkbox" />
-                <p>Placeholder text</p>
+                <p>{this.props.item.text}</p>
             </div>
         )
     }

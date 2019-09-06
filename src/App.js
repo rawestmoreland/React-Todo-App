@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import TodoItem from './Components/TodoItem'
+import todoComponents from "./todos"
 
-function App() {
-  return (
-    <div className = "todo-list">
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-    </div>
-  );
+class App extends Component {
+  render() {
+    const todoList = todoComponents.map(item => <TodoItem key={item.id} item={item}/>)
+    return (
+      <div className = "todo-list">
+        {todoList}
+      </div>
+    );
+  }
+  
 }
 
 export default App;
