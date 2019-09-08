@@ -22,7 +22,7 @@ const todos = [
     {
         id: 5,
         text: "Do the dishes",
-        completed: true
+        completed: false
     }
 ]
 
